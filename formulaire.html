@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+ <link rel="stylesheet" type="text/css" href="style_formulaire.css">
+	<title>mon formulaire</title>
+		<center>
+ 		<table>
+ 			<tr>
+ 				<td>
+ 					<h1>formulaire pour les journées portes ouvertes</h1>
+ 						<center>
+ 							<h2>inscription</h2>
+ 						</center>
+ 				</td>
+ 			</tr>
+ 		</table>
+ 		</center>
+</head>
+
+<body>
+	<form action="validation.html">
+
+	<center>
+		<h2>je m'identifie</h2>
+
+		<table cellspacing="50">
+			<tr> 
+				<td><b>Prénom : </b></td>
+				<td><input type="text" name="t1"></td>
+				<td rowspan="5"><img src="checklist-103448795.jpg" width="200" height="200"></td>
+			</tr>
+			<tr>
+				<td><b>Nom :</b></td>
+				<td><input type="text" name="t2"></td>			
+			</tr>
+			<tr>
+ 				<td><b>Choix d'orientation : </b></td>
+ 				<td>
+ 					<select>
+ 						<option>veuillez choisir une option</option>
+ 						<option>developpeur web</option>
+ 						<option>developpeur application</option>
+ 						<option>administrateur reseau</option>
+ 						<option>gestionnaire de base de données</option>
+ 					</select>
+ 				</td>
+ 			</tr>
+ 			<tr>
+				<td><b>E-mail : </b></td>
+				<td><input type="E-mail" name="t3"></td>
+			</tr>
+			<tr>
+				<td><b>Mot de passe : </b></td>
+				<td><input type="password" name="t4"></td>
+			</tr>
+		</table>
+	</center>
+	<center>
+		<h2>j'informe</h2>
+
+			<table>
+			<tr>
+				<td><b>Mes disponibilités : </b></td>
+				<td><input type="checkbox" name="c1"> samedi 5 fevrier</td>
+				<td><input type="checkbox" name="c2"> samedi 12 fevrier</td>
+				<td><input type="checkbox" name="c3"> samedi 19 mars</td>
+				<td><input type="checkbox" name="c4"> samedi 26 mars</td>
+			</tr>
+			<tr>
+				<td><b>je me renseignerai sur :</b></td>
+				<td><input type="radio" name="r1">developpeur web</td>
+				<td><input type="radio" name="r1">developpeur application</td>
+				<td><input type="radio" name="r1">administrateur reseau</td>
+				<td><input type="radio" name="r1">gestionnaire de base de données</td>
+			</tr>
+			<tr>
+				<td><b>Je laisse un message (facultatif) : </b></td>
+			</tr>
+			<tr>
+				<td colspan="5"><textarea name="ta1" rows="4" cols="100" placeholder="Maximum 160 caracteres !"></textarea></td>
+			</tr>
+		</table>
+	</center>
+
+	<center>
+		<input type="reset" value="Annuler">
+		<input type="submit" value="Valider"><br><br>
+		<a href="index.html">
+			<button>retour au menu principal</button>
+		</a>
+	</center>
+</form>
+
+</body>
+
+</html>

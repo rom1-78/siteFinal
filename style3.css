@@ -1,0 +1,64 @@
+th
+	{
+		background-color: #00ffff;
+		border:1px solid #008fff;
+		height: 150px;
+		font-size: 3em;
+	}
+
+table
+	{
+		border:1px solid #008fff;
+		margin: auto;
+		padding: 3px;
+		height: 200px;
+		width: 70%;
+
+	}
+
+tr
+	{
+		border:1px solid #008fff;
+		height: 100px;
+		width: 70%;
+	}
+
+td
+	{
+		border:1px solid #008fff;
+		margin-bottom: 200px;
+	}
+
+h1
+	{
+		text-align: center;
+		font-family: arial;
+		font-size: 2em;
+	}
+
+.s1
+	{
+		text-align: center;
+		height: 70%;
+		margin: auto;
+	}
+
+.s2
+	{
+		background-image: url(drapeaufr.png);
+		text-align: center;
+		background-size: 100% 100%;
+	}
+
+.s3
+	{
+		background-image: url(drapeauES.jpg);
+		text-align: center;
+		background-size: 100% 100%;
+	}
+
+#i1
+	{
+		text-align: center;
+		width: 50%;
+	}

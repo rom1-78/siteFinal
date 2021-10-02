@@ -1,0 +1,32 @@
+body
+	{
+		background-color: #de7c7c;
+	}
+
+table
+	{
+		border: 1px solid black;
+		border-radius: 5px;
+	}
+h2
+	{
+		text-decoration: underline;
+	}
+a 
+	{
+		float: left;
+		width: 100px;
+		height: 50	px;
+		border: 1px solid #463a3a;
+		border-radius: 5px;
+		text-align: center;
+		padding: 50px;
+		box-shadow: 60px -16px #760f0f;
+		margin-left: 100px;
+	}
+
+a :hover
+	{
+		background-color: #760f0f;
+		border-radius: 5px;
+	}
