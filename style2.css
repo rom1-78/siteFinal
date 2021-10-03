@@ -79,7 +79,7 @@ nav ul
 code
 	{
 		background: #48564D;
-		color :#de7c7c;
+		color :#AB4576;
 		font-size: 2em;
 		font-family: 'arial';
 		text-align: center;
@@ -91,7 +91,7 @@ code
 footer
 	{
 		clear: both;
-		position: relative;
+		position: absolute;
 		bottom: 0;
 		width: 100%;
 		padding-top: 50px;
