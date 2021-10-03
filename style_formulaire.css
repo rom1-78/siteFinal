@@ -6,11 +6,12 @@ body
 table
 	{
 		border: 1px solid black;
-		border-radius: 5px;
+		border-radius: 10px;
 	}
 h2
 	{
 		text-decoration: underline;
+		font-size: 2em;
 	}
 a 
 	{
@@ -18,7 +19,7 @@ a
 		width: 100px;
 		height: 50	px;
 		border: 1px solid #463a3a;
-		border-radius: 5px;
+		border-radius: 10px;
 		text-align: center;
 		padding: 50px;
 		box-shadow: 60px -16px #760f0f;
@@ -28,5 +29,26 @@ a
 a :hover
 	{
 		background-color: #760f0f;
-		border-radius: 5px;
+		border-radius: 10px;
+	}
+
+code
+	{
+		background: #48564D;
+		color :#de7c7c;
+		font-size: 2em;
+		font-family: 'arial';
+		text-align: center;
+		border: 2px solid #1454CD;
+		border-radius: 10px;
+		display: block;
+	}
+
+footer
+	{
+		clear: both;
+		position: relative;
+		bottom: 0;
+		width: 100%;
+		padding-top: 50px;
 	}

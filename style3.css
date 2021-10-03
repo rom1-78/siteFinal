@@ -1,3 +1,7 @@
+body
+	{
+		background-color: #de7c7c;
+	}
 th
 	{
 		background-color: #00ffff;
@@ -10,7 +14,7 @@ table
 	{
 		border:1px solid #008fff;
 		margin: auto;
-		padding: 3px;
+		padding: 0px;
 		height: 200px;
 		width: 70%;
 
@@ -21,6 +25,7 @@ tr
 		border:1px solid #008fff;
 		height: 100px;
 		width: 70%;
+		background-color: white;
 	}
 
 td
@@ -60,5 +65,58 @@ h1
 #i1
 	{
 		text-align: center;
-		width: 50%;
+		width: 60%;
+	}
+
+nav li
+	{
+		float: left;
+		width: 100px;
+		height: 50	px;
+		border: 1px solid #463a3a;
+		border-radius: 10px;
+		text-align: center;
+		padding: 50px;
+		box-shadow: 60px -16px #760f0f;
+		margin-left: 100px;
+	}
+
+nav li a
+	{
+		display: block;
+		background-color: #de7c7c;
+		border-radius: 10px;
+	}
+
+nav li :hover
+	{
+		background-color: #760f0f;
+		border-radius: 10px;
+	}
+
+nav ul
+	{
+		list-style-type: none;
+		padding-top: 100px;
+	}
+
+code
+	{
+		background: #48564D;
+		color :#de7c7c;
+		font-size: 2em;
+		font-family: 'arial';
+		text-align: center;
+		border: 2px solid #1454CD;
+		border-radius: 10px;
+		display: block;
+	}
+
+footer
+	{
+		clear: both;
+		position: relative;
+		bottom: 0;
+		width: 100%;
+		padding-top: 50px;
 	}

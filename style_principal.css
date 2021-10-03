@@ -15,7 +15,7 @@ nav li
 		width: 250px;
 		height: 75px;
 		border: 1px solid #463a3a;
-		border-radius: 5px;
+		border-radius: 10px;
 		text-align: center;
 		padding: 50px;
 		box-shadow: 60px -16px #760f0f;
@@ -26,18 +26,39 @@ nav li a
 	{
 		display: block;
 		background-color: #de7c7c;
-		border-radius: 5px;
+		border-radius: 10px;
 
 	}
 
 nav li :hover
 	{
 		background-color: #760f0f;
-		border-radius: 5px;
+		border-radius: 10px;
+		background-size: 100px;
 	}
 
 nav ul
 	{
 		list-style-type: none;
 		
+	}
+
+code
+	{
+		background: #48564D;
+		color :#de7c7c;
+		font-size: 2em;
+		font-family: 'arial';
+		text-align: center;
+		border: 2px solid #1454CD;
+		border-radius: 10px;
+		display: block;
+	}
+
+footer
+	{
+		clear: both;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
 	}
