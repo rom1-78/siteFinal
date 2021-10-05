@@ -1,9 +1,15 @@
+body
+	{
+		background-color: #de7c7c;
+	}
+
 .page
 	{
+		margin: auto;
 		border-radius: 5px;
 		border: 3px solid black;
 		padding: 20px;
-		margin: 30px;
+		margin: auto;
 		font-size: 1.2em ;
 		font-family: verdana;
 		height:1100px;
@@ -157,4 +163,59 @@ h1
 		margin-right: 10px;
 		width: 80%;
 		height: 140px;
+	}
+
+nav li
+	{
+		float: left;
+		width: 250px;
+		height: 75px;
+		border: 1px solid #463a3a;
+		border-radius: 10px;
+		text-align: center;
+		padding: 50px;
+		box-shadow: 60px -16px #760f0f;
+		margin-left: 100px;
+		margin-bottom: 25px;
+	}
+
+nav li a
+	{
+		display: block;
+		background-color: #de7c7c;
+		border-radius: 10px;
+
+	}
+
+nav li :hover
+	{
+		background-color: #760f0f;
+		border-radius: 10px;
+		background-size: 100px;
+	}
+
+nav ul
+	{
+		list-style-type: none;
+		margin-top: 50px;
+	}
+
+code
+	{
+		background: #48564D;
+		color :#de7c7c;
+		font-size: 2em;
+		font-family: 'arial';
+		text-align: center;
+		border: 2px solid #1454CD;
+		border-radius: 10px;
+		display: block;
+	}
+
+footer
+	{
+		clear: both;
+		position: relative;
+		bottom: 0;
+		width: 100%;
 	}
