@@ -3,42 +3,43 @@
 <head>
 	<meta charset="utf-8">
 	<title>menu principal du site</title>
-	<link rel="stylesheet" type="text/css" href="style_principal.css">
+	<link rel="stylesheet" type="text/css" href="style_principal2.css">
 </head>
 <body>
-	<h1>Menu principal du site</h1>
 	<nav>
+		<label for="menu-mobile" class="menu-mobile">Menu principal du site</label>
+		<input type="checkbox" id="menu-mobile" name="c1" role="button">
 		<ul>
-			<li>
-				<a href="sommaire.html">
-					<button>présentation des metiers de l'informatique</button>
-				</a>
+			<li class="menu-metier"><a href="sommaire.html">Présentation des métiers de l'informatique</a>
+				<ul class="submenu">
+					<li><a href="developpeur web.html">Fiche métier developpeur web</a></li>
+					<li><a href="developpeur application.html">Fiche métier developpeur application</a></li>
+					<li><a href="administrateur reseau.html">Fiche métier administrateur reseau</a></li>
+					<li><a href="gestionnaire de base de données.html">Fiche métier gestionnaire de base de données</a></li>
+				</ul>
 			</li>
-			<li>
-				<a href="formulaire.html">
-					<button>formulaire d'inscription pour les journées portes ouvertes</button>
-				</a>
+			<li class="menu-formulaire"><a href="formulaire.html">Formulaire d'inscription pour les journées portes ouvertes</a>
+				<ul class="submenu">
+					<li><a href="validation.html">Validation d'inscription</a></li>
+				</ul>
 			</li>
-			<li>
-				<a href="localisation.html">
-					<button>localisation du lieu de formation sur une mini carte</button>
-				</a>
+			<li class="menu-frame"><a href="localisation.html">Localisation du lieu de formation sur une mini carte</a>
+				<ul class="submenu">
+					<li><a href="localisation.html">Affiche la page principale en frame</a></li>
+					<li><a href="page1frame.html">titre en bleu</a></li>
+					<li><a href="page2frame.html">fond en bleu</a></li>
+				</ul>
 			</li>
-			<li>
-				<a href="tableau_CSS.html">
-					<button>recompenses prévus avec l'école (voir conditions et détails)</button>
-				</a>
+			<li class="menu-cv"><a href="cv.html">CV type pour alternance en deuxieme année</a>
 			</li>
-			<li>
-				<a href="cv.html">
-					<button>CV type pour alternance en deuxieme année</button>
-				</a>
+			<li class="menu-responsive"><a href="responsive.html">menu déroulant</a>
+				<ul class="submenu">
+					<li><a href="#">HTML</a></li>
+					<li><a href="#">CSS</a></li>
+					<li><a href="#">JavaScript</a></li>
+				</ul>
 			</li>
-			<li>
-				<a href="responsive.html">
-					<button>menu déroulant en HTML et CSS</button>
-				</a>
-			</li>
+			<li class="menu-contact"><a href="#">CONTACT</a></li>
 		</ul>
 	</nav>
 	<footer> 

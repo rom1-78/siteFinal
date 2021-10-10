@@ -1,0 +1,258 @@
+body
+	{
+		font-family: verdana, calibri, sans-serif;
+		margin: 0px;
+		padding: 0px;
+		background-color: #de7c7c;
+	}
+
+nav > ul
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+
+nav li
+	{
+		list-style-type: none;
+	}
+
+nav > ul > li 
+	{
+		float: left;
+		position: relative;
+	}
+
+.submenu
+	{
+		display: none;
+	}
+
+nav input[type=checkbox]
+	{
+		display: none;
+	}
+
+.menu-mobile
+	{
+		display: none;
+	}
+
+nav
+	{
+		width: 100%;
+		background-color: #424558;
+	}
+
+nav > ul::after
+	{
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+nav a
+	{
+		display: inline-block;
+		text-decoration: none;
+	}
+
+nav > ul > li > a
+	{
+		padding: 20px 30px;
+		color: #FFF;
+	}
+
+nav li:hover .submenu
+	{
+		display: inline-block;
+		position: absolute;
+		top: 100%;
+		left: 0px;
+		padding: 0px;
+		z-index: 100000;
+	}
+
+.submenu li
+	{
+		border-bottom: 1px solid #CCC;	
+	}
+
+.submenu li a
+	{
+		padding: 15px 30px;
+		font-size: 13px;
+		color: #222538;
+		width: 270px;
+	}
+
+.menu-metier:hover
+	{
+		border-top: 5px solid #e44d26;
+		background-color: RGBa(228, 77, 38, 0.15);
+	}
+
+.menu-formulaire:hover
+	{
+		border-top: 5px solid #0070bb;
+		background-color: RGBa(000, 112, 192, 0.15);
+	}
+
+.menu-frame:hover
+	{
+		border-top: 5px solid #f1dc4f;
+		background-color: RGBa(241, 211, 79, 0.15);
+	}
+
+.menu-cv:hover
+	{
+		border-top: 5px solid #f1dc4f;
+		background-color: RGBa(39, 255, 0, 0.15);
+	}
+
+.menu-responsive:hover
+	{
+		border-top: 5px solid #f1dc4f;
+		background-color: RGBa(255, 0, 232, 0.15);
+	}
+
+.menu-contact:hover
+	{
+		border-top: 5px solid #BBB;
+		background-color: RGB(220, 220, 220, 0.15);
+	}
+
+nav > ul > li:hover a 
+	{
+		padding: 15px 30px 20px 30px;
+	}
+
+.menu-metier .submenu
+	{
+		background-color: RGB(230, 100, 40);
+	}
+
+.menu-formulaire .submenu
+	{
+		background-color: RGB(000, 160, 240);
+	}
+
+.menu-frame .submenu
+	{
+		background-color: RGB(251, 216, 99);
+	}
+
+.menu-cv .submenu
+	{
+		background-color: RGB(39, 255, 0);
+	}
+
+.menu-responsive .submenu
+	{
+		background-color: RGB(255, 0, 232);
+	}
+
+.submenu li:hover a
+	{
+		color: #EEE;
+		font-weight: bold;
+	}
+
+.menu-metier .submenu li:hover
+	{
+		background-color: RGB(210, 77, 60);
+	}
+
+.menu-formulaire .submenu li:hover
+	{
+		background-color: RGB(000, 115, 200);
+	}
+
+.menu-frame .submenu li:hover
+	{
+		background-color: RGB(200, 165, 75);
+	}
+
+.menu-cv .submenu li:hover
+	{
+		background-color: RGB(39, 255, 0);
+	}
+
+.menu-responsive .submenu li:hover
+	{
+		background-color: RGB(255, 0, 232);
+	}
+
+nav input[type=checkbox]:checked ~ ul
+	{
+		display: block;
+	}
+
+@media screen and (max-width : 680px)
+	{
+		.menu-mobile
+		{
+			display: block;
+			color: #FFF;
+			background-color: rgba(29, 197, 151, 0.97);
+			text-align: center;
+			padding:  12px 0;
+		}
+	nav ul
+		{
+			display: none;
+		}
+	}
+
+@media screen and (max-width : 680px)
+	{
+	.menu-mobile
+		{
+			display:  block;
+			color: #FFF;
+			background-color: rgba(29, 197, 151, 0.97);
+			text-align: center;
+			padding: 12px 0;
+		}
+	nav ul
+		{
+		display: none;
+		}
+	}
+
+nav ul li, nav ul li a 
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+nav ul li a, nav ul li:hover a 
+	{
+		padding: 10px 0px 10px 0px;
+	}
+nav li:hover .submenu
+	{
+		display: block;
+		position: static;
+	}
+}
+
+code
+	{
+		background: #48564D;
+		color :#de7c7c;
+		font-size: 2em;
+		font-family: 'arial';
+		text-align: center;
+		border: 2px solid #1454CD;
+		border-radius: 10px;
+		display: block;
+	}
+
+footer
+	{
+		clear: both;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
