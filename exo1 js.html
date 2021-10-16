@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>	</title>
+	<link rel="stylesheet" type="text/css" href="js1.css">
+</head>
+<body>
+		<script type="text/javascript">
+			var note1 = Number(prompt("donner la premiere note"));
+			var note2 = Number(prompt("donner la deuxieme note"));
+			var note3 = Number(prompt("donner la troisieme note"));
+			var somme = note1*2+note2*2+note3*3;
+			var moy = somme /7;
+
+			if (moy<10)
+				document.write("trimestre invalidé")
+				
+			else
+				document.write("trimestre validé")
+			
+				document.write("<table border=2>");
+				document.write("<td> voila la somme des note en fonction des coefficients:" + somme + "</td>");
+				document.write("<td>" + "voila la moyenne:" + moy + "</td>");
+				document.write("</table>");
+		</script>
+		<nav>
+			<ul>
+				<li>
+					<a href="exo2 js.html">
+					<button>prénom js</button>
+					</a>
+				</li>
+				<li>
+					<a href="exo3 js.html">
+						<button>prénom div js</button>
+					</a>
+				</li>
+				<li>
+					<a href="exo4 js.html">
+						<button>age valide? js</button>
+					</a>
+				</li>
+				<li>
+					<a href="exo5 js.html">
+						<button>background color js</button>
+					</a>
+				</li>
+				<li>
+					<a href="index.html">
+						<button>retour au menu principal</button>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</body>
+</html>
