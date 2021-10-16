@@ -116,6 +116,12 @@ nav li:hover .submenu
 		background-color: RGBa(255, 0, 232, 0.15);
 	}
 
+.menu-js:hover
+	{
+		border-top: 5px solid #f1dc4f;
+		background-color: RGBa( 93, 74, 197  0.15);
+	}
+
 .menu-contact:hover
 	{
 		border-top: 5px solid #BBB;
@@ -152,6 +158,12 @@ nav > ul > li:hover a
 		background-color: RGB(255, 0, 232);
 	}
 
+.menu-js .submenu
+	{
+		background-color: RGB(90, 70, 180);
+	}
+	 
+
 .submenu li:hover a
 	{
 		color: #EEE;
@@ -181,6 +193,11 @@ nav > ul > li:hover a
 .menu-responsive .submenu li:hover
 	{
 		background-color: RGB(255, 0, 232);
+	}
+
+.menu-js .submenu li:hover
+	{
+		background-color: RGB(80, 60, 170);
 	}
 
 nav input[type=checkbox]:checked ~ ul
