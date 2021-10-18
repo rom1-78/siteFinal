@@ -6,24 +6,39 @@
 	<link rel="stylesheet" type="text/css" href="js1.css">
 </head>
 <body>
-		<script type="text/javascript">
-			var note1 = Number(prompt("donner la premiere note"));
-			var note2 = Number(prompt("donner la deuxieme note"));
-			var note3 = Number(prompt("donner la troisieme note"));
-			var somme = note1*2+note2*2+note3*3;
-			var moy = somme /7;
 
-			if (moy<10)
-				document.write("trimestre invalidé")
-				
-			else
-				document.write("trimestre validé")
-			
-				document.write("<table border=2>");
-				document.write("<td> voila la somme des note en fonction des coefficients:" + somme + "</td>");
-				document.write("<td>" + "voila la moyenne:" + moy + "</td>");
-				document.write("</table>");
-		</script>
+	<script type="text/javascript">
+    var note1 = Number(prompt("donner une premiere note"));
+    var note2 = Number(prompt("donner une deuxieme note"));
+    var note3 = Number(prompt("donner une troisieme note"));
+    var somme = note1*2 + note2*2 + note3*3;
+    var moyenne = somme /7;
+
+
+	if (moyenne>=10)
+   		{
+   			alert("Admis")
+   		 	document.bgColor="greenblue"
+   		 	document.write("ADMIS")
+   		}
+	else if (moyenne<8)
+    	{
+    		alert("Pas admis")
+   			document.bgColor="red"
+    		document.write("PAS ADMIS")
+    	}
+	else
+    	{	document.write("Rattrapage")
+    		document.bgColor="orange"
+    		alert("Rattrapage")
+    	}
+
+    document.write("<table border=2>");
+	document.write("<td> voila la somme des note en fonction des coefficients:" + somme + "</td>");
+	document.write("<td>" + "voila la moyenne:" + moyenne + "</td>");
+	document.write("</table>");
+	</script>
+
 		<nav>
 			<ul>
 				<li>

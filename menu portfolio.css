@@ -6,6 +6,68 @@ body
 		background-color: #de7c7c;
 	}
 
+header
+	{
+		text-align: center;
+		background-color: #424558;
+		padding: 10px;
+		margin: 10px;
+		border-radius: 20px;
+	}
+
+.s1
+	{
+		margin: 10px;
+		padding: 10px;
+		width: 15%;
+		height: 700px;
+		float: left;
+		border: 1px solid black;
+	}
+
+.s2
+	{
+		width: 75%;
+		height: 700px;
+		float: right;
+		border: 1px solid black;
+		margin: 10px;
+		padding: 10px;
+	}
+
+
+iframe
+	{
+		margin-right: 20px;
+		height: 650px;
+		width: 100%;
+	}
+
+.f2
+	{
+		margin-right: 20px;
+		height: 650px;
+		width: 70%;
+	}
+
+img
+	{
+		height: 200px;
+		width: 200px;
+		float: right;
+	}
+
+footer
+	{
+		text-align: center;
+		background-color: #424558;
+		clear: both;
+		position: relative;
+		padding: 10px;
+		margin: 10px;
+		border-radius: 20px;
+	}
+
 nav > ul
 	{
 		margin: 0px;
@@ -15,12 +77,6 @@ nav > ul
 nav li
 	{
 		list-style-type: none;
-	}
-
-nav > ul > li 
-	{
-		float: left;
-		position: relative;
 	}
 
 .submenu
@@ -86,40 +142,28 @@ nav li:hover .submenu
 		width: 270px;
 	}
 
-.menu-metier:hover
+.menu-accueil:hover
 	{
 		border-top: 5px solid #e44d26;
 		background-color: RGBa(228, 77, 38, 0.15);
 	}
 
-.menu-formulaire:hover
+.menu-cv:hover
 	{
 		border-top: 5px solid #0070bb;
 		background-color: RGBa(000, 112, 192, 0.15);
 	}
 
-.menu-frame:hover
+.menu-projet:hover
 	{
 		border-top: 5px solid #f1dc4f;
 		background-color: RGBa(241, 211, 79, 0.15);
 	}
 
-.menu-portfolio:hover
+.menu-veilles:hover
 	{
 		border-top: 5px solid #f1dc4f;
-		background-color: RGBa(39, 255, 0, 0.15);
-	}
-
-.menu-responsive:hover
-	{
-		border-top: 5px solid #f1dc4f;
-		background-color: RGBa(255, 0, 232, 0.15);
-	}
-
-.menu-js:hover
-	{
-		border-top: 5px solid #f1dc4f;
-		background-color: RGBa( 93, 74, 197  0.15);
+		background-color: RGBa(50, 209, 76 0.15);
 	}
 
 .menu-contact:hover
@@ -133,36 +177,15 @@ nav > ul > li:hover a
 		padding: 15px 30px 20px 30px;
 	}
 
-.menu-metier .submenu
-	{
-		background-color: RGB(230, 100, 40);
-	}
-
-.menu-formulaire .submenu
-	{
-		background-color: RGB(000, 160, 240);
-	}
-
-.menu-frame .submenu
+.menu-projet .submenu
 	{
 		background-color: RGB(251, 216, 99);
 	}
 
-.menu-portfolio .submenu
+.menu-veilles .submenu
 	{
-		background-color: RGB(39, 255, 0);
+		background-color: RGB(55, 234, 85);
 	}
-
-.menu-responsive .submenu
-	{
-		background-color: RGB(255, 0, 232);
-	}
-
-.menu-js .submenu
-	{
-		background-color: RGB(90, 70, 180);
-	}
-	 
 
 .submenu li:hover a
 	{
@@ -170,34 +193,14 @@ nav > ul > li:hover a
 		font-weight: bold;
 	}
 
-.menu-metier .submenu li:hover
-	{
-		background-color: RGB(210, 77, 60);
-	}
-
-.menu-formulaire .submenu li:hover
-	{
-		background-color: RGB(000, 115, 200);
-	}
-
-.menu-frame .submenu li:hover
+.menu-porjet .submenu li:hover
 	{
 		background-color: RGB(200, 165, 75);
 	}
 
-.menu-portfolio .submenu li:hover
+.menu-veilles .submenu li:hover
 	{
-		background-color: RGB(39, 255, 0);
-	}
-
-.menu-responsive .submenu li:hover
-	{
-		background-color: RGB(255, 0, 232);
-	}
-
-.menu-js .submenu li:hover
-	{
-		background-color: RGB(80, 60, 170);
+		background-color: RGB(45, 249, 79);
 	}
 
 nav input[type=checkbox]:checked ~ ul
@@ -247,29 +250,10 @@ nav ul li a, nav ul li:hover a
 	{
 		padding: 10px 0px 10px 0px;
 	}
+
 nav li:hover .submenu
 	{
 		display: block;
 		position: static;
 	}
 }
-
-code
-	{
-		background: #48564D;
-		color :#de7c7c;
-		font-size: 2em;
-		font-family: 'arial';
-		text-align: center;
-		border: 2px solid #1454CD;
-		border-radius: 10px;
-		display: block;
-	}
-
-footer
-	{
-		clear: both;
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-	}
