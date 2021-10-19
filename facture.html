@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="js3.css">
+
+	<script type="text/javascript">
+		function calculate()
+		{
+			var x= Number(document.getElementById("un").value); 
+			var y= Number(document.getElementById("deux").value);
+			var z= Number(document.getElementById("trois").value);
+
+			var a= Number(document.getElementById("un1").value); 
+			var b= Number(document.getElementById("deux1").value);
+			var c= Number(document.getElementById("trois1").value);
+
+			var d= Number(document.getElementById("un2").value); 
+			var e= Number(document.getElementById("deux2").value);
+			var f= Number(document.getElementById("trois2").value);
+
+			document.getElementById("answer").value=(y*z); 
+			document.getElementById("answer1").value=(b*c);
+			document.getElementById("answer2").value=(e*f);
+			document.getElementById("total").value=(b*c+e*f+y*z);
+		}
+		
+	</script>
+</head>
+<body>
+	
+	<center><h1>Facture en Javascript</h1></center>
+	<form>
+		<table border="2px" width="30%">
+			<tr>
+				<td>produit :</td>
+				<td>prix :</td>
+				<td>quantité :</td>
+				<td>total :</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="un" id="un" placeholder="saisir la désignation"></td>
+				<td><input type="text" name="deux" id="deux" value="0"></td>
+				<td><input type="text" name="trois" id="trois"	value="0"></td>
+				<td><input type="text" name="answer" id="answer" value="0"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="un1" id="un1" placeholder="saisir la désignation"></td>
+				<td><input type="text" name="deux1" id="deux1" value="0"></td>
+				<td><input type="text" name="trois1" id="trois1" value="0"></td>
+				<td><input type="text" name="answer1" id="answer1" value="0"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="un2" id="un2" placeholder="saisir la désignation"></td>
+				<td><input type="text" name="deux2" id="deux2" value="0"></td>
+				<td><input type="text" name="trois2" id="trois2" value="0"></td>
+				<td><input type="text" name="answer2" id="answer2" value="0"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="reset" name="t1"></td>
+				<td><input onclick="calculate()" type="button" value="Addition"></td>
+				<td><input type="text" name="total" id="total"></td>
+			</tr>
+		</table>
+	</form>
+	<nav>
+		<ul>
+			<li>
+				<a href="somme en zone de texte et bouton.html">
+					<button>somme en zone de texte et bouton</button>
+				</a>
+			</li>
+			<li>
+				<a href="index.html">
+					<button>retour au menu principal</button>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>

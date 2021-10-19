@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="js3.css">
+	<script type="text/javascript">
+		function calculate()
+		{
+			var x= parseInt(document.getElementById("First").value); 
+			var y= parseInt(document.getElementById("Second").value);
+			document.getElementById("Answer").value=(x+y);
+		}
+	</script>
+
+	<title>exam</title>
+</head>
+<body>
+
+<form >
+	First:<input id="First" name="First" type="text"><br>
+	Second:<input id="Second" name="Second" type="text"><br>
+	Answer:<input id="Answer" name="Answer" type="text"><br>
+	<input onclick="calculate()" type="button"  value="Addition"> 
+	</form>
+	<nav>
+		<ul>
+			<li>
+				<a href="mot avec consigne version 2.html">
+					<button>mot avec consigne version 2</button>
+				</a>
+			</li>
+			<li>
+				<a href="facture.html">
+					<button>facture</button>
+				</a>
+			</li>
+			<li>
+				<a href="index.html">
+					<button>retour au menu principal</button>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>
