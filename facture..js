@@ -51,3 +51,12 @@ function calculate() {
     // Frais exp
     const fraisexp = parseInt(document.getElementById('e_m1').value);
 }
+function access(){
+            var username=prompt("Identifiant :");
+            var password=prompt("Mot de passe :");
+        if (username==="Admin_GSB" && password==="admin"){
+            document.location.href="lien.html";
+        }
+        else
+            { alert("Identifiant ou mot de passe incorrects")}
+        }
