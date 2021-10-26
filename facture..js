@@ -4,6 +4,7 @@ date=new Date();
     var an=date.getFullYear();
     var date=(jour+"/"+mois+"/"+an);
     document.write('<input type="text" readonly value="'+ date + '"/>');
+    
 function calculate() {
     // Prix
     var p1 = parseInt(document.getElementById('p1').value);
