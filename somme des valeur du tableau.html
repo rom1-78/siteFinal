@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="09112021js.css">
+	<title></title>
+	<script type="text/javascript">
+
+		function somme()
+		{
+			var j;
+			tab=new Array();
+			var x=prompt("donner la taille du tableau : ")
+			var s=0;
+
+			for(j=0;j<x;j++)
+			{
+				tab[j]=prompt("donner une valeur " + j + "du tableau");
+			}
+			for(j=0;j<x;j++)
+			{
+				document.write(tab[j],"/")
+			}
+
+			for(j=0;j<x;j++)
+			{
+				s=s+Number(tab[j]);
+			}
+			document.write("Somme =" + s)
+		}
+		
+	</script>
+</head>
+<body>
+	<input type="button" name="s" onclick="somme()" value="somme">
+</body>
+</html>

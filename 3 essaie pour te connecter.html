@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="09112021js.css">
+	<title></title>
+	<script type="text/javascript">
+		function access_while()
+		{
+			var i=0;
+			do
+			{
+				i=i+1;
+				var username=prompt("Identifiant : ");
+				var password=prompt("Mot de passe : ");
+				if(username==="Admin_GSB" && password==="admin")
+				{
+					document.location.href="index.pdf";
+				}
+				else
+				{
+					alert("Identifiant ou mot de passe incorrect")
+				}
+			}
+			while(i<3);
+			if(i=3)
+				alert("compte bloqué");
+		}
+	</script>
+</head>
+<body>
+	<input type="button" name="c" onclick="access_while()" value="se connecter">
+</body>
+</html>
