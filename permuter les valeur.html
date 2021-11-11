@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="09112021js.css">
-	<title></title>
+	<meta charset="utf-8">
+    <title>Permutation</title>
 	<script type="text/javascript">
-		function switch()
-		{
-			x=document.fo.a.value;
-			document.fo.a.value=document.fo.b.value;
-			document.fo.b.value=x;
+		function permuter(){
+			var a = document.form.a.value;
+			document.form.a.value=document.form.b.value;
+			document.form.b.value=a;
 		}
 	</script>
 </head>
 <body>
-	<form name="fo">
-	<input type="texte" name="a">
-	<input type="texte" name="b">
-	<input type="button" onClick="switch()" value="permuter">
-	</form>
+    <form name="form">
+        <input type="text" id="a">
+        <input type="text" id="b">
+        <input type="button" value="permuter" onclick="permuter()">
+    </form>
+</body>
+</html>
 		<nav>
 			<ul>
 				<li>
