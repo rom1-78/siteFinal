@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Exemple de Facture</title>
+	<link rel="stylesheet" type="text/css" href="facture auto.css">
+	<script type="text/javascript" src="facture auto.js"></script>
+</head>
+<body onload="onload()">
+	<form>
+		<div class="facture">
+			<div class="entete">
+			<div class="gauche">
+	<table>
+		<tr>
+			<td><img src="ppfb.png" height="64"></td>
+			<td>
+				<ul class="info_co">
+					<li><span class="nom">Nom de la compagnie</span></li>
+					<li><span class="info">Adresse postale</span></li>
+					<li><br><span class="info">Détails du contact</span></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+			</div>
+			<div class="droite">
+	<table>
+		<tr>
+			<td width="160px"><span class="titre">FACTURE</span></td>
+		</tr>
+		<tr>
+			<td class=text_area><br><input type="text" name="date" id="date" placeholder="Date"></td>
+		</tr>
+		<tr>
+			<td class=text_area><br><input type="text" name="n_facture" id="n_facture" placeholder="N° de facture"></td>
+		</tr>
+			</table>
+		</div>
+		</div>
+		<div class="contenu">
+<span class="condition">Conditions de paiement, par exemple: dû dans X jours</span>
+		<div class="destination">
+	<table width="96%" border="0" style="margin: 0 auto;">
+		<tr>
+			<td class="text_area"><span class="titre_dest">Destinataire<span></td>
+			<td width="24px"></td>
+			<td class="text_area"><span class="titre_dest">Envoyez à</span></td>
+		</tr>
+		<tr>
+			<td>Nom</td>
+			<td></td>
+			<td>Nom</td>
+		</tr>
+		<tr>
+			<td>Nom de la société</td>
+			<td></td>
+			<td>Nom de la société</td>
+		</tr>
+		<tr>
+			<td>Adresse postale</td>
+			<td></td>
+			<td>Adresse postale</td>
+		</tr>
+		<tr>
+			<td>Téléphone</td>
+			<td></td>
+			<td>Téléphone</td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td></td>
+			<td>Email</td>
+		</tr>
+	</table>
+	</div>
+	<div class="inventaire">
+	<table class="table_inv" id="table_inv" width="96%" border="0" cellspacing="0">
+		<tr class="entete_inv">
+			<th width="600px">DESCRIPTION</th>
+			<th width="140px">QUANTITÉ</th>
+			<th width="140px">PRIX UNITAIRE</th>
+			<th width="80px">TOTAL</th>
+		</tr>
+		<!-- DEBUT DE LA PARTIE A MODIFIER -->
+		<tr class="row firstrow">
+			<td><input type="text" name="desc"  class="input desc" value ="desc1"></td>
+			<td><input type="text" name="qte"  class="input qte" value ="0"></td>
+			<td><input type="text" name="prix"  class="input prix" value ="0"></td>
+			<td><input type="text" name="total" class="totalLigne" readonly="readonly" value="0.00"></td>
+		</tr>
+		<tr class="row">
+			<td><input type="text" name="desc"  class="input desc" value ="desc2"></td>
+			<td><input type="text" name="qte" class="input qte" value ="0"></td>
+			<td><input type="text" name="prix"  class="input prix" value ="0"></td>
+			<td><input type="text" name="total" class="totalLigne" readonly="readonly" value="0.00"></td>
+		</tr>
+		<tr class="row" id="modeleLigne">
+			<td><input type="text" name="desc" class="input desc" value ="desc3"></td>
+			<td><input type="text" name="qte"  class="input qte" value ="0"></td>
+			<td><input type="text" name="prix" class="input prix" value ="0"></td>
+			<td><input type="text" name="total" class="totalLigne" readonly="readonly" value="0.00"></td>
+		</tr>
+	
+		
+		<tr class="row lastrow" id="lastLigne">
+			<td><input type="text" name="desc" class="input desc" value ="desc4"></td>
+			<td><input type="text" name="qte"  class="input qte" value ="0"></td>
+			<td><input type="text" name="prix"  class="input prix" value ="0"></td>
+			<td><input type="text" name="total" class="totalLigne" readonly="readonly" value="0.00"></td>
+		</tr>
+		
+	</table>
+	<table class="calcul_table" width="96%" border="0" style=" margin: 0 auto;" cellspacing="0">
+		<tr class="calcul">
+			<td style="text-align: left;">Remarques, notes et instructions de paiement</td>
+			<td></td>
+			<td width="540px">SOUS-TOTAL</td>
+			<td width="80px"><input type="text" name="sous-total" id="st1" class="input" value="0.00"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>REMISE</td>
+			<td><input type="text" name="remise" id="r1" class="input" value="10.00"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>SOUS-TOTAL MOINS LES REMISES</td>
+			<td><input type="text" name="st_remise" id="st_r1" value="0.00" readonly="readonly"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>TAUX D'IMPOSITION</td>
+			<td><input type="text" name="taux_impot" id="ti1" class="input" value="10.00%"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>TAXE TOTALE</td>
+			<td><input type="text" name="taxe_total" id="tt1" value="0.00" readonly="readonly"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>EXPEDITO, MANUTENTION</td>
+			<td><input type="text" name="exp_man" id="e_m1" class="input" value="5.00"></td>
+		</tr>
+	</table>
+	<table width="96%" style="margin: 0 auto;" cellspacing="0">
+		<tr>
+			<td></td>
+			<td width="140px"></td>
+			<td width="140px" style="border-top: 1px solid black; font-size: 16px;">SOLDE DU</td>
+			<td style="background-color: lightpink; border-top: 1px solid black;" width="80px"><input type="text" name="solde"
+			id="solde" value="0.00€" readonly="readonly"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td style="background-color: lightpink; border-top: 1px solid black"> </td>
+		</tr>
+	</table>
+	</div>
+	</div>
+		<input type="button" value="Calculer" onclick="calculate()">
+		<input type="reset" value="Annuler">
+		<input type="button" value="Ajouter une ligne" onclick="ajouterLigne()">
+        <input type="button" value="Remplir automatiquement" onclick="remplir()">
+	</div>
+</form>
+</body>
+</html>

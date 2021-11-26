@@ -1,0 +1,163 @@
+/* - Corps de la facture - */
+.facture{
+	font-family: 'Verdana';
+	width: 60%;
+	margin: 0 auto;
+	background-color: lightblue;
+	border-top: 16px solid grey;
+	border-bottom: 16px solid grey;
+	border-radius: 12px;
+}
+
+.text_area{
+	border-bottom: 1px solid black;
+}
+
+
+/* - En-tête- */
+
+
+.entete{
+	background-color: #008E8E;
+	padding-bottom: 32px;
+}
+
+
+/* >> Partie gauche */
+
+
+.gauche{
+	display: inline-block;
+}
+
+img{
+	margin: 2em;
+	margin-right: 1em;
+	border-radius: 50%;
+}
+
+.info_co{
+	margin-left: -1.4em;
+}
+
+ul{
+	list-style: none;
+}
+
+span.info{
+	font-size: 12px;
+}
+
+
+/* >> Partie droite */
+
+
+.droite{
+	margin-top: auto;
+	float: right;
+	padding: 14px;
+	padding-top: 2em;
+	text-align: center;
+}
+
+span.titre{
+	font-weight: bold;
+	font-size: 24px;
+	color: #969696;
+}
+
+#date, #n_facture{
+	text-align: center;
+}
+
+
+/* - Contenu - */
+
+
+.contenu{
+	padding-top: 18px;
+}
+
+
+/* >> Destination & Condition */
+
+
+.destination{
+	font-size: 13px;
+	margin-bottom: 12px;
+}
+
+span.condition{
+	float: right;
+	font-size: 12px;
+	margin-right: 16px;
+	margin-bottom: 6px;
+	font-style: italic;
+}
+
+span.titre_dest{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+/* >> Inventaire */
+
+
+.inventaire{
+	font-size: 12px;
+	text-align: right;
+}
+
+.inventaire tr td input{
+	text-align: right;
+}
+
+.table_inv{
+	height: 8em;
+	margin: 0 auto;
+}
+
+table td input{
+	min-width: 1px;
+	max-width: 100%;
+	width: 99%;
+	border-style: none;
+	background-color: transparent;
+}
+
+.table_inv tr td{
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
+}
+
+table tr td .desc{
+	text-align: left;
+}
+
+.entete_inv{
+	text-align: center;
+	background-color: #008E8E;
+	color: white;
+	height: 18px;
+}
+
+.firstrow td{
+	border-top: 1px solid gray;
+}
+
+.lastrow td{
+	border-bottom: 1px solid gray;
+}
+
+.inventaire .row:nth-child(even){
+	background-color: #fff;
+}
+
+.inventaire .row:nth-child(odd){
+	background-color: #e8e8e8;
+}
+#solde{
+	font-weight: bold;
+	font-size: 18px;
+}
