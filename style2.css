@@ -1,98 +1,256 @@
 body
 	{
+
+		font-family: verdana, calibri, sans-serif;
+		margin: 0px;
+		padding: 0px;
 		background-color: #de7c7c;
 	}
 
-table
+.font
 	{
-		border:2px solid #00c1ff;
-		width: 60%;
-		margin: auto;
-		background-color: #FFFFFF;
+ 		background: linear-gradient(blue, 10%, pink);
+ 		width:100%;
+ 		height: 980px;
+ 	}
+
+ul
+	{
+		width: 100%;
 	}
 
-h1
+nav > ul
 	{
-		font-family: arial;
-		font-size: 2em;
-		text-align: center;
-		margin: 20px;
-		font-weight: bold;
-		text-decoration: underline;
-		
-	}
-
-tr
-	{
-		height: 50px;
-	}
-
-th 
-	{
-		background-image: url('nuage.jpg'); 
-		font-family: verdana;
-		font-size: 1.2em;
-		text-align: center;
-		border: 1px solid #000009;
-	}
-
-td 
-	{
-		border:1px solid #0068ff;
-		font-size: 1.2em;
-		text-align: center;
-		padding: 5px;
+		margin-top: 0%;
+		padding: 0px;
 	}
 
 nav li
 	{
-		float: left;
-		width: 100px;
-		height: 50	px;
-		border: 1px solid #463a3a;
-		border-radius: 10px;
-		text-align: center;
-		padding: 50px;
-		box-shadow: 60px -16px #760f0f;
-		margin-left: 100px;
-	}
-
-nav li a
-	{
-		display: block;
-		background-color: #de7c7c;
-		border-radius: 10px;
-	}
-
-nav li :hover
-	{
-		background-color: #760f0f;
-		border-radius: 10px;
-	}
-
-nav ul
-	{
 		list-style-type: none;
-		padding-top: 100px;
 	}
 
-code
+nav > ul > li 
 	{
-		background: #48564D;
-		color :#AB4576;
-		font-size: 2em;
-		font-family: 'arial';
-		text-align: center;
-		border: 2px solid #1454CD;
-		border-radius: 10px;
+		float: left;
+		position: relative;
+	}
+
+.submenu
+	{
+		display: none;
+	}
+
+nav input[type=checkbox]
+	{
+		display: none;
+	}
+
+.menu-mobile
+	{
+		display: none;
+	}
+
+nav
+	{
+		width: 100%;
+		background-color: #424558;
+	}
+
+nav > ul::after
+	{
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+nav a
+	{
+		display: inline-block;
+		text-decoration: none;
+	}
+
+nav > ul > li > a
+	{
+		padding: 20px 30px;
+		color: #FFF;
+	}
+
+nav li:hover .submenu
+	{
+		display: inline-block;
+		position: absolute;
+		top: 100%;
+		left: 0%;
+		padding: 0%;
+		z-index: 100000;
+	}
+
+.submenu li
+	{
+		border-bottom: 1px solid #CCC;	
+	}
+
+.submenu li a
+	{
+		padding: 15px 30px;
+		font-size: 13px;
+		color: #222538;
+		width: auto;
+	}
+
+.menu-metier:hover
+	{
+		border-top: 5px solid #e44d26;
+		background-color: RGBa(228, 77, 38, 0.15);
+	}
+
+.menu-formulaire:hover
+	{
+		border-top: 5px solid #0070bb;
+		background-color: RGBa(000, 112, 192, 0.15);
+	}
+
+.menu-frame:hover
+	{
+		border-top: 5px solid #f1dc4f;
+		background-color: RGBa(241, 211, 79, 0.15);
+	}
+
+.menu-responsive:hover
+	{
+		border-top: 5px solid #FF21EB;
+		background-color: RGBa(255, 0, 232, 0.15);
+	}
+
+.menu-js1:hover
+	{
+		border-top: 5px solid #AE45D7;
+		background-color: RGBa( 93, 74, 197, 0.15);
+	}
+
+.menu-js2:hover
+	{
+		border-top: 5px solid #AE45D7;
+		background-color: RGBa( 93, 74, 197, 0.15);
+	}
+
+.menu-js3:hover
+	{
+		border-top: 5px solid #AE45D7;
+		background-color: RGBa( 93, 74, 197, 0.15);
+	}
+
+.menu-portfolio
+	{
+		width: 6%;
+	}
+
+.menu-portfolio:hover
+	{
+		border-top: 5px solid #40FF1D;
+		background-color: RGBa(39, 255, 0, 0.15);
+	}
+
+.menu-contact:hover
+	{
+		border-top: 5px solid #BBB;
+		background-color: RGB(220, 220, 220, 0.15);
+	}
+
+nav > ul > li:hover a 
+	{
+		padding: 15px 30px 20px 30px;
+	}
+
+.menu-metier .submenu
+	{
+		background-color: RGB(230, 100, 40);
+	}
+
+.menu-formulaire .submenu
+	{
+		background-color: RGB(000, 160, 240);
+	}
+
+.menu-frame .submenu
+	{
+		background-color: RGB(251, 216, 99);
+	}
+
+.menu-responsive .submenu
+	{
+		background-color: RGB(255, 0, 232);
+	}
+
+.menu-js1 .submenu
+	{
+		background-color: RGB(180, 70, 180);
+	}
+
+.menu-js2 .submenu
+	{
+		background-color: RGB(180, 70, 180);
+	}
+
+.menu-js3 .submenu
+	{
+		background-color: RGB(180, 70, 180);
+	}
+
+.menu-portfolio .submenu
+	{
+		background-color: RGB(39, 255, 0);
+	}	 
+
+.submenu li:hover a
+	{
+		color: #EEE;
+		font-weight: bold;
+	}
+
+.menu-metier .submenu li:hover
+	{
+		background-color: RGB(210, 77, 60);
+	}
+
+.menu-formulaire .submenu li:hover
+	{
+		background-color: RGB(000, 115, 200);
+	}
+
+.menu-frame .submenu li:hover
+	{
+		background-color: RGB(200, 165, 75);
+	}
+
+.menu-responsive .submenu li:hover
+	{
+		background-color: RGB(216, 16, 198);
+	}
+
+.menu-js1 .submenu li:hover
+	{
+		background-color: RGB(152, 51, 192);
+	}
+
+.menu-js2 .submenu li:hover
+	{
+		background-color: RGB(152, 51, 192);
+	}
+
+.menu-js3 .submenu li:hover
+	{
+		background-color: RGB(152, 51, 192);
+	}
+
+.menu-portfolio .submenu li:hover
+	{
+		background-color: RGB(50, 222, 19);
+	}
+
+nav input[type=checkbox]:checked ~ ul
+	{
 		display: block;
 	}
 
-footer
-	{
-		clear: both;
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		padding-top: 50px;
-	}
